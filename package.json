@@ -1,0 +1,9 @@
+{
+    "main": "megacubo-generate-language.js",
+    "name": "megacubo-generate-language",
+    "dependencies": {
+        "@vitalets/google-translate-api": "github:vitalets/google-translate-api",
+        "async": "^3.2.2",
+        "decode-entities": "^1.0.7"
+    }
+}
