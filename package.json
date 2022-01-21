@@ -1,7 +1,7 @@
 {
     "main": "megacubo-generate-language-files.js",
     "name": "megacubo-generate-language-files",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "dependencies": {
         "@vitalets/google-translate-api": "github:vitalets/google-translate-api",
         "async": "^3.2.2",

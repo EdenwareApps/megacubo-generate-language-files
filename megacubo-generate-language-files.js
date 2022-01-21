@@ -48,7 +48,7 @@ fs.readFile(sourceFile, async (err, data) => {
     let json = JSON.parse(String(data))
     for(const newTargetLanguage in newTargetLanguages){
         let targetFile = 'lang/'+ newTargetLanguage +'.json'
-        let stat = fs.statSync(targetFile)
+        let stat = fs.existsSync(targetFile) ? fs.statSync(targetFile) : null
         if(!stat || !stat.size){
             let p = "\r\rTranslating to "+ newTargetLanguages[newTargetLanguage] +' ('+ newTargetLanguage +'):'
             let njson = {}, n = 0, m = Object.keys(json).length
